@@ -5,21 +5,21 @@
 class Zshhistorymasker < Formula
   desc "Remove sensitive data from your zsh history"
   homepage ""
-  version "0.1.0-beta.0"
+  version "0.1.0-beta.1"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/danievanzyl/zshhistorymasker/releases/download/v0.1.0-beta.0/zshhistorymasker_Darwin_x86_64.tar.gz"
-    sha256 "dfa9214ad14f040d15c2d6cfbfa03cd3fb908b176257f3fd49e386c42b11d934"
+    url "https://github.com/danievanzyl/zshhistorymasker/releases/download/v0.1.0-beta.1/zshhistorymasker_Darwin_x86_64.tar.gz"
+    sha256 "2fdf4588558c595e0950bbbcb15f3c4199c676638a9b43338d00bfeec9b8311a"
 
     def install
       bin.install "zshhistorymasker"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/danievanzyl/zshhistorymasker/releases/download/v0.1.0-beta.0/zshhistorymasker_Darwin_arm64.tar.gz"
-    sha256 "3cf83d25cc6066ee415ad51e2a920c48fc0645c7825e5f1d449f480eb852bf43"
+    url "https://github.com/danievanzyl/zshhistorymasker/releases/download/v0.1.0-beta.1/zshhistorymasker_Darwin_arm64.tar.gz"
+    sha256 "2c70d4785decfec82a7eb0c2edf5b94054dab6ef2a2cc2fc1f39a0e673ff6ae9"
 
     def install
       bin.install "zshhistorymasker"
